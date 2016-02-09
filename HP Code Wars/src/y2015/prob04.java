@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 import java.lang.Integer;
 
-public class prob04 {
+public class prob04{
 
     public prob04() {
         readInput();
