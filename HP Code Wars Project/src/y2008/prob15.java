@@ -7,15 +7,14 @@
  * Hp CodeWars Railway Shunting Crew
  */
 
-package HPCodeWars;
+package y2008;
 import java.io.*;
 
 
 public class prob15 {
     
     /** Creates a new instance of RailwayShunting */
-    public RailwayShunting() {
-    }
+    
     
     // class that will represent the Rail Cars
     
@@ -410,7 +409,7 @@ public class prob15 {
         String cd = "";
         String result = "";
         
-        RailwayShunting rw = new RailwayShunting();
+        //RailwayShunting rw = new RailwayShunting();
         
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         
@@ -430,7 +429,7 @@ public class prob15 {
         //result = new String("L12345");
         result.trim();
         
-        rw.orderCars(rw.initTracks(ab,cd,result));
+        //rw.orderCars(rw.initTracks(ab,cd,result));
         
     }
     

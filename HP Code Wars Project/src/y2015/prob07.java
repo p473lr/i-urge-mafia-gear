@@ -1,3 +1,5 @@
+package y2015;
+
 // Sebastian Schagerer
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

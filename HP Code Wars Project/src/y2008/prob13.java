@@ -1,3 +1,5 @@
+package y2008;
+
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -49,16 +51,16 @@ public class prob13 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(args[0])));
 		
-		LeastRecentlyUsed lru = new LeastRecentlyUsed();
+		//LeastRecentlyUsed lru = new LeastRecentlyUsed();
 		String line;
 		while((line = in.readLine()) != null) {
 			
 			String[] pages = line.split(" ");
 			for (int i = 0; i < pages.length; i++) {
-				lru.getPage(Integer.parseInt(pages[i]));
+				//lru.getPage(Integer.parseInt(pages[i]));
 			}
 			
-			System.out.println(lru);
+			//System.out.println(lru);
 		}
 	}
 

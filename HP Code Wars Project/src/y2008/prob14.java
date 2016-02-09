@@ -1,3 +1,5 @@
+package y2008;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -39,8 +41,8 @@ public class prob14
      */
     public static void main(String[] args) throws Exception 
     {
-        SixDegreesOfKevinBacon prob = new SixDegreesOfKevinBacon();
-        prob.execute();
+       // SixDegreesOfKevinBacon prob = new SixDegreesOfKevinBacon();
+      //   prob.execute();
     }
 
     /**

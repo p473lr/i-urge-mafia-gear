@@ -1,3 +1,5 @@
+package y2008;
+
 
 /*
  * CodeWars 2008

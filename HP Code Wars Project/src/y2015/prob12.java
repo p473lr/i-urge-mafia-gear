@@ -1,3 +1,5 @@
+package y2015;
+
 // Sebastian Schagerer
 import java.awt.Point;
 import java.io.BufferedReader;
