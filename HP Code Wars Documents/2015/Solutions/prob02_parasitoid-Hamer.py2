@@ -1,0 +1,9 @@
+import sys
+
+c = int(sys.stdin.readline())
+p = int(sys.stdin.readline())
+	
+pe = c * p
+
+print pe
+	

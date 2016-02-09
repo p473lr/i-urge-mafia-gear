@@ -1,0 +1,65 @@
+import sys
+
+a_ = 0x81
+i_ = 0x89
+j_ = 0x91
+r_ = 0x99
+s_ = 0xa2
+z_ = 0xa9
+A_ = 0xc1
+I_ = 0xc9
+J_ = 0xd1
+R_ = 0xd9
+S_ = 0xe2
+Z_ = 0xe9
+space_ = 0x40
+period_ = 0x4b
+comma_ = 0x6b
+exclam_ = 0x5a
+
+numlines = int(sys.stdin.readline())
+
+for i in range(numlines):
+	line = sys.stdin.readline()
+	parts = line.split(' ')
+	numcodes = int(parts[0])
+	for c in range(numcodes):
+		eb = int(parts[c+1], 16)
+		if eb < a_:
+			if eb == space_:
+				sys.stdout.write(' ')
+			elif eb == period_:
+				sys.stdout.write('.')
+			elif eb == comma_:
+				sys.stdout.write(',')
+			elif eb == exclam_:
+				sys.stdout.write('!')
+			else:
+				raise Exception("invalid ebcdic code!")
+		else:
+			if eb <= i_:
+				sys.stdout.write(chr(ord('a')+eb-a_))
+			elif eb < j_:
+				raise Exception("invalid ebcdic code!")
+			elif eb <= r_:
+				sys.stdout.write(chr(ord('j')+eb-j_))
+			elif eb < s_:
+				raise Exception("invalid ebcdic code!")
+			elif eb <= z_:
+				sys.stdout.write(chr(ord('z')+eb-z_))
+			elif eb < A_:
+				raise Exception("invalid ebcdic code!")
+			elif eb <= I_:
+				sys.stdout.write(chr(ord('A')+eb-A_))
+			elif eb < J_:
+				raise Exception("invalid ebcdic code!")
+			elif eb <= R_:
+				sys.stdout.write(chr(ord('J')+eb-J_))
+			elif eb < S_:
+				raise Exception("invalid ebcdic code!")
+			elif eb <= Z_:
+				sys.stdout.write(chr(ord('Z')+eb-Z_))
+			else:
+				raise Exception("invalid ebcdic code!")
+	print  # newline
+			

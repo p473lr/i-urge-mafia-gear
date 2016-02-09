@@ -1,0 +1,76 @@
+import sys
+
+class match_state:
+	def __init__(self, numbers, remain, starti):
+		self.numbers = numbers	#list of numbers matched
+		self.remain = remain	#remaining string
+		self.starti = starti	#where to start in remain string
+
+
+def test_alt(d, expect_Odd1Even2):
+	if not d:
+		return True
+	if d % 2 == 1:
+		if expect_Odd1Even2 == 2:
+			return False
+		return test_alt(d >> 1, 2)
+	else:
+		if expect_Odd1Even2 == 1:
+			return False
+		return test_alt(d >> 1, 1)
+	return False
+	
+
+def is_alternating(d):
+	return test_alt(d, 0)
+		
+
+def match_greedy(state):
+	i = state.starti
+	j = 1
+	while True:
+		s = state.remain[i:j]
+		r = state.remain[i+j:]
+		d = int(s)
+		#test bits
+		if is_alternating(d):
+			#success
+			new_numbers = state.numbers[:]
+			new_numbers.append(d)
+			new_state = match_state(new_numbers, r, 0)
+			if not r:
+				#good state!
+				terminal_states.append(new_state)
+				return
+			else:
+				branch_states.append(new_state)
+		if not r:
+			return #bad state
+		#include next char
+		j += 1
+
+	
+digits = sys.stdin.readline().rstrip().rstrip('.')
+numparts = int(sys.stdin.readline())
+
+terminal_states = []
+branch_states = [match_state([], digits, 0)]
+
+while len(branch_states) > 0:
+	curr_state = branch_states.pop()
+	match_greedy(curr_state)
+	
+
+answer = None
+
+for i in range(len(terminal_states)):
+	if (numparts == len(terminal_states[i].numbers)):
+		answer = terminal_states[i].numbers
+		break
+		
+if answer:
+	for i in range(len(answer)):
+		print answer[i]
+else:
+	print "NOT FOUND!"
+

@@ -1,0 +1,26 @@
+import sys
+
+transitions = {}	#map transition to map of states [t->(s->s)]
+
+count = int(sys.stdin.readline())
+for i in range(count):
+	line = sys.stdin.readline()
+	parts = line.split()
+	here = parts[0]
+	tx = parts[1]
+	there = parts[2]
+	if (tx not in transitions):
+		transitions[tx] = {}
+	transitions[tx][here] = there
+
+encoded = sys.stdin.readline().rstrip()
+
+decoded = ''
+curr = '#'
+for i in range(len(encoded)):
+	here = encoded[i:i+1]
+	there = transitions[here][curr]
+	decoded += there
+	curr = there
+
+print decoded

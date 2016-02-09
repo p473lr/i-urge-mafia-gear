@@ -1,0 +1,81 @@
+import sys
+
+class cell_data:
+	def __init__(self, i, j, value):
+		self.i = i	
+		self.j = j
+		self.value = value
+		self.visited = False
+		self.is_end = False
+		self.is_start = False
+
+		
+parts = sys.stdin.readline().split()
+num_rows = int(parts[0])
+num_cols = int(parts[1])
+grid = []
+start_cell = None
+end_cell = None
+
+#build grid
+for i in range(num_rows):
+	parts = sys.stdin.readline().split()
+	r = []
+	for j in range(num_cols):
+		if parts[j] == 'S':
+			start_cell = cell_data(i,j,9)
+			start_cell.is_start = True
+			r.append(start_cell)
+		elif parts[j] == 'X':
+			end_cell = cell_data(i,j,0)
+			end_cell.is_end = True
+			r.append(end_cell)
+		else:
+			r.append(cell_data(i,j,int(parts[j])))
+	grid.append(r)
+
+	
+#depth-first search (recursive)
+def visit(cell):
+	cell.visited = True
+	if cell.is_end:
+		#we made it!
+		return True
+	near = []
+	if cell.i-1 >= 0:
+		near.append(grid[cell.i-1][cell.j])
+	if cell.j-1 >= 0:
+		near.append(grid[cell.i][cell.j-1])
+	if cell.i+1 < num_rows:
+		near.append(grid[cell.i+1][cell.j])
+	if cell.j+1 < num_cols:
+		near.append(grid[cell.i][cell.j+1])
+	for n in range(len(near)):
+		if near[n].visited:
+			continue
+		if near[n].value > cell.value:
+			continue
+		if visit(near[n]):
+			return True
+		near[n].visited = False
+	return False
+
+	
+#find a path (depth-fist search)
+if not visit(start_cell):
+	raise Exception("ERROR: no path found!")
+
+	
+#visited flags should show us the path
+for i in range(num_rows):
+	for j in range(num_cols):
+		if grid[i][j].is_start:
+			print "S",
+		elif grid[i][j].is_end:
+			print "X",
+		elif grid[i][j].visited:
+			print ".",
+		else:
+			print "#",
+	print
+

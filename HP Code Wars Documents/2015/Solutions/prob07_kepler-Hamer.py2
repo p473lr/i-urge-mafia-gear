@@ -1,0 +1,8 @@
+import sys
+
+while True:
+	line = sys.stdin.readline()
+	P = float(line)
+	if (P == 0.0):
+		break
+	print pow(P * P, 1.0/3.0)

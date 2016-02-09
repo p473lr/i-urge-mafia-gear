@@ -1,0 +1,363 @@
+2
+Barbara Bill Ted
+Nancy Ted John
+John Barbara
+3
+Lois Frank Jack
+Florence Bill Fred
+Annie Fred James
+James Jack
+1
+John Susan Billy
+John Susan
+2
+Karen Roger Christopher
+Karen Roger Michael
+Christopher Michael
+2
+Peter Lois Megan
+Peter Lois Chris
+Megan Chris
+3
+John Sherry Terry
+Jeffrey Mary Michael
+Michael Terry Tim
+John Jeffrey
+3
+John Sherry Terry
+Jeffrey Mary Michael
+Michael Terry Tim
+John Matt
+3
+John Sherry Terry
+Jeffrey Mary Michael
+Michael Terry Tim
+Bill Ted
+6
+John Martha Robert
+John Martha Alex
+Mary Michael Penny
+Mary Michael Peter
+Robert Penny Matthew
+Alex Peter Shelly
+Matthew Shelly
+16
+Alex Ben Christopher
+Alex Ben Daniel
+Alex Ben Elaine
+Fred Elaine Gina
+Christopher Helena Inez
+Fred Elaine Joshua
+Daniel Katrina Lisa
+Fred Elaine Mark
+Nancy Orson Pamela
+Nancy Orson Quincy
+Pamela Richard Samantha
+Pamela Richard Tabitha
+Pamela Richard Ursula
+Tabitha Victor Westley
+Tabitha Victor Xenon
+Tabitha Yancy Zack
+Christopher Tabitha
+16
+Alex Ben Elaine
+Fred Elaine Gina
+Nancy Orson Pamela
+Pamela Richard Samantha
+Pamela Richard Ursula
+Pamela Richard Tabitha
+Alex Ben Daniel
+Alex Ben Christopher
+Christopher Helena Inez
+Tabitha Victor Westley
+Tabitha Victor Xenon
+Fred Elaine Joshua
+Fred Elaine Mark
+Tabitha Yancy Zack
+Daniel Katrina Lisa
+Nancy Orson Quincy
+Alex Mark
+15
+Alex Ben Daniel
+Daniel Katrina Lisa
+Pamela Richard Tabitha
+Tabitha Yancy Zack
+Nancy Orson Pamela
+Tabitha Victor Xenon
+Alex Ben Christopher
+Fred Elaine Gina
+Pamela Richard Samantha
+Christopher Helena Inez
+Pamela Richard Ursula
+Fred Elaine Mark
+Fred Elaine Joshua
+Christopher Tabitha Fred
+Alex Ben Elaine
+Pamela Daniel
+26
+Aaron Abby Bridgit
+Bridgit Barry Charles
+Charles Chelsea Diana
+Diana David Elen
+Elen Elliot Frank
+Frank Frieda Georgia
+Georgia Gary Hillary
+Hillary Hank Inez
+Inez Ignacio Jerry
+Jerry Janet Karla
+Karla Kenny Louis
+Louis Linda Mario
+Mario Melinda Nina
+Nina Nicholas Orlando
+Orlando Oprah Penny
+Penny Percy Quincy
+Quincy Quinta Rachel
+Rachel Ricky Steven
+Steven Sarah Tina
+Tina Timmy Ulysses
+Ulysses Uhuru Valentine
+Valentine Victor Wally
+Wally Winona Xena
+Xena Xenon Yancy
+Yancy Yvette Zelda
+Zelda Zack Andrew
+Quinta Elliot
+10
+Aaron Christie Brad
+Christie Eric Diana
+Eric Ginny Florence
+Ginny Ivan Harry
+Ivan Kim Joshua
+Kim Morris Larry
+Morris Patricia Octavio
+Patricia Raymond Queenie
+Raymond Trini Stefan
+Trini Vic Uri
+Aaron Vic
+12
+Aaron Christie Brad
+Christie Eric Diana
+Eric Ginny Florence
+Ginny Ivan Harry
+Ivan Kim Joshua
+Kim Morris Larry
+Morris Patricia Octavio
+Patricia Raymond Queenie
+Raymond Trini Stefan
+Trini Vic Uri
+Vic Xena Wilma
+Xena Aaron Yvon 
+Brad Yvon
+17
+Alex Ben Daniel
+Daniel Katrina Lisa
+Pamela Richard Tabitha
+Tabitha Yancy Zack
+Nancy Orson Pamela
+Tabitha Victor Xenon
+Alex Ben Christopher
+Fred Elaine Gina
+Pamela Richard Samantha
+Christopher Helena Inez
+Pamela Richard Ursula
+Fred Elaine Mark
+Fred Elaine Joshua
+Nancy Orson Quincy
+Christopher Tabitha Fred
+Alex Ben Elaine
+Quincy Gina MNenda
+Pamela Daniel
+1
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+99
+A B G
+B C H
+C D I
+D E J
+E F K
+L G M
+G H N
+H I O
+J K Q
+M N S
+N O T
+O P U
+P Q V
+Q R W
+X S Y
+S T Z
+T U AA
+U V AB
+V W AC
+Y Z AE
+Z AA AF
+AA AB AG
+AB AC AH
+AC AD AI
+AJ AE AK
+AE AF AL
+AF AG AM
+AG AH AN
+AH AI AO
+AK AL AQ
+AL AM AR
+AM AN AS
+AN AO AT
+AO AP AV
+AW AQ AX
+AQ AR AY
+AR AS AZ
+AS AT BA
+AV AT BB
+AX AY BD
+AY AZ BE
+AZ BA BF
+BA BB BG
+BB BC BH
+BI BD BJ
+BD BE BK
+BE BF BL
+BF BG BM
+BG BH BN
+BJ BK BP
+BK BL BQ
+BL BM BR
+BM BN BS
+BN BO BT
+BU BP BV
+BP BQ BW
+BQ BR BX
+BR BS BY
+BS BT BZ
+BV BW CB
+BW BX CC
+BX BY CD
+BY BZ CE
+BZ CA CF
+CG CB CH
+CB CC CI
+CC CD CJ
+CD CE CK
+CE CF CL
+CH CI CN
+CI CJ CO
+CJ CK CP
+CK CL CO
+CL CM CR
+CS CN CT
+CN CO CV
+CO CP CW
+CP CQ CX
+CR CQ CY
+CT CV DA
+CV CW DB
+CW CX DC
+CX CY DD
+CY CZ DE
+DF DA DG
+DA DB DH
+DB DC DI
+DC DD DJ
+DD DE DK
+DG DH DM
+DH DI DN
+DI DJ DO
+DJ DK DP
+DK DL DQ
+DR DM DS
+DM DN DT
+DN DO DU
+DO DP DV
+DP DQ DW
+CY B
+20
+A B AB
+A B AAB
+A B ABA
+A B BA
+C D DC
+C D DCDC
+D C DDD
+D C CDCC
+D C CCD
+F E FE
+G H HG
+H G GH
+I J JJJI
+I J IJJIJI
+J I JIJIJIJ
+K L KKKKLLLL
+K L LKLKL
+K L LKLKLKKK
+L K KLKLK
+L K KLK
+A GH
+1
+A B AB
+A AB
+5
+A B C
+C D E
+E F G
+G H I
+A I J
+A J
+14
+A B C
+A B D
+D E F
+G H I
+J K L
+L M N
+I L O
+P Q R
+P Q S
+S AA U
+R AB T
+X Y AB
+Y Z AA
+V W Y
+F O
+14
+A B C
+A B D
+D E F
+G H I
+J K L
+L M N
+I L O
+P Q R
+P Q S
+S AA U
+R AB T
+X Y AB
+Y Z AA
+V W Y
+Q Y
+14
+A B C
+A B D
+D E F
+G H I
+J K L
+L M N
+I L O
+P Q R
+P Q S
+S AA U
+R AB T
+X Y AB
+Y Z AA
+V W Y
+V J
+1
+A B C
+A B
+1
+A B C
+A C
+1
+A B C
+C B
+0

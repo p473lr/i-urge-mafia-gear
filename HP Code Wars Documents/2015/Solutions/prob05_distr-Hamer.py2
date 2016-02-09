@@ -1,0 +1,14 @@
+import sys
+
+a = int(sys.stdin.readline())
+b = int(sys.stdin.readline())
+c = int(sys.stdin.readline())
+
+print a, 'X (', b, '+', c, ') = ', a, 'X', b, '+', a, 'X', c
+add_left = b + c
+mult_right1 = a * b
+mult_right2 = a * c
+print a, 'X', add_left, '=', mult_right1, '+', mult_right2
+final_left = a * add_left
+final_right = mult_right1 + mult_right2
+print final_left, '=', final_right

@@ -1,0 +1,38 @@
+import sys
+
+while True:
+	line = sys.stdin.readline()
+	parts = line.split(' ', 3)
+	size = int(parts[0])
+	rows = int(parts[1])
+	cols = int(parts[2])
+	if size == 0 and rows == 0 and cols == 0:
+		break
+	half_size = size / 2
+	
+	left = half_size - 1
+	right = half_size
+	direction = 1
+	for r in range(rows * size):
+		for c in range(cols * size):
+			c_loc = c % size #get relative location of column and row 
+			r_loc = r % size # within the local diamond being printed
+			if c_loc < left or c_loc > right:
+				sys.stdout.write('#')
+			elif c_loc < half_size:
+				if r_loc < half_size:
+					sys.stdout.write('/')
+				else:
+					sys.stdout.write('\\')
+			else:
+				if r_loc < half_size:
+					sys.stdout.write('\\')
+				else:
+					sys.stdout.write('/')
+		print #newline
+		left -= direction
+		right += direction
+		if left < 0 or left >= half_size:
+			direction = -direction
+			left -= direction
+			right += direction

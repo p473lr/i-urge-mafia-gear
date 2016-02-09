@@ -1,0 +1,207 @@
+39
+From: test1@ucf.edu
+X-Lines: 1
+Click <a href="http://www.ucf.edu/secure.cgi">www.test.com</a>!
+From: judge@www.cs.ucf.edu
+X-Lines: 1
+Click <a href="http://www.ucf.edu/secure.cgi">www.cs.ucf.edu</a>!
+From: whitespace@test.com
+X-Lines: 5
+Click <a href="http://www.whitespaceit.com/tests/case.html">
+                  test1.whitespaceit.com </
+a               
+>
+Should be ok!
+From: technicality@badcases.com
+X-Lines: 1
+<a       href    =       "http://a.a">a.b/c</ a>
+From: technicality-response@badcases.com
+X-Lines: 1
+<a       href    =       "http://a.a">http://a.b</ a>
+From: grandma@ucfwaffles.com
+X-Lines: 7
+Hey,
+
+I heard you like our waffles! COOL! I get a good discount, so just
+let me know if you need anymore.
+
+-- Granny
+
+From: ouchyes
+X-Lines: 1
+<a href="http://www.ucf.edu/http://www.hspc.org">donate.hspc.org</a>
+From: ouchno
+X-Lines: 1
+<a href="http://www.ucf.edu/http://www.hspc.org">hspc.ucf.edu</a>
+From: case@sensitivity.com
+X-Lines: 6
+Hey, can you check <a
+href = "www.google.com">
+GOOGLE.COM
+</
+a>
+for my package?
+From: onecapital
+X-Lines: 3
+<a href="http://www.onecapital.com">a.B.onecapitla.com</a>
+Yes, it is mispelled intentionally, the uppercase B discards it as
+a valid domain name. NASTY!
+From: Ali
+X-Lines: 1
+
+From: dots-ok
+X-Lines: 1
+<a href="http://www.ok.com">not..bad.com</a>
+From: biglink
+X-Lines: 3
+<a href="http://www.cs.ucf.edu">this is a long link
+www.cs.ucf.edu.hacked
+that has an invalid domain on a line by itself</a>
+From: besttests.com
+X-Lines: 3
+htp:\/besttests.com would like you to try our new
+<a href="http://www.besttests.com/">besttests.com.redirect.com</a>
+for a limited time!
+From: testslash-ok
+X-Lines: 1
+<a href="http://www.ucf.edu">www.cs.ucf.edu.offsite.tw/</a>
+From: testslash-ok
+X-Lines: 1
+<a href="http://www.ucf.edu/">www.cs.ucf.edu</a>
+From: account-info@zitibank.com
+X-Lines: 4
+Warning!!!!!!! You're bank acount has been frozen due to supecious
+activitys. Please login immediatly at <a href =
+"http://pesce.penne.pasta/zitibank/login.html">www.zitibank.com </a>
+to reactivate you're bank account inclding you're ATM card(s).
+From: Velma@mysterymachine.van
+X-Lines: 5
+heyyyyy,'sup.... yesterday my pal scooby introduced me to a guy named
+hrugh hrefner, a =rich= and "famous" man who has greater-than *three*
+girlfriends even tho he's older than...um, older than ghost stories.
+
+hm, i wonder if he likes g.w.g (girls with glasses).
+From: security_dept@payfoul.com
+X-Lines: 8
+Your account has been locked because, well, we felt like it. In order
+to send or receive any more money via PayFoul, you must go to <a href=
+"http://login.cgi.payfoul.com/update/info/why?waste=time&yr=20">
+www.payfoul.com</a> and enter another bank account number, two more
+credit cards, your driver's license, and a scan of your fingerprints.
+You agreed to this when you signed up, so don't complain about it! Go
+review your <a href ="http://tos.payfoul.com/we-own-you.html">terms of
+service</a>.
+From: hi
+X-Lines: 3
+This is an ok message because text is broken 
+<a href = "http://hi.com"> die
+.com</a> 
+From: die
+X-Lines: 2
+This time text is not broken, it's phishy! 
+<a href = "http://hi.com"> die.com</a>
+From: longText
+X-Lines: 10
+<a href="http://shortlink.net.org">net.org</a>net.otg<a href=
+"http://nowlongtext.com">hiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+:D:O:E:X:):-):P=):P:p=P=)=]:o:O!Teeteeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+ekkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</a>
+From: blank
+X-Lines: 1
+
+From: doubleContinuousDots@dot.com
+X-Lines: 2
+Hi! check out This Link: <a href="http://www.yahoo.net">
+www..yahoo.com</a>
+From: noDots@mail.com
+X-Lines: 2
+This Time There's no dots in text:
+<a href="http://tom.com">com</a>
+From: phishyNet@thief.com
+X-Lines: 10
+<a href="www.money.com">
+
+
+
+cash.net
+
+
+
+</a>
+
+From: goodperson@a.x
+X-Lines: 4
+"http://www.yahoo.com" www.google.com
+<a href="http://winner.getcash.net/pagename=prize,user=you">
+getcash.net </a>
+"http://yeppynet.sol" link.sol
+From: bad@me.net
+X-Lines: 1
+<a href="http://tetete.ye"> </a>
+From: legitmate@domain.com
+X-Lines: 1
+<a href="http://x.x">x.x</a>
+From: illegitmate@domain.com
+X-Lines: 1
+<a href="http://x.x">y.y</a>
+From: maxdomain-ok
+X-Lines: 3
+longer than ever: <a href="http://www.domain.com/">
+abcdefghijklmnopqrstuvwxyz.abcdefghijklmnopqrstuvwxyz.abcde.domain.com
+</a>
+From: maxdomain-phishy
+X-Lines: 3
+longer than ever: <a href="http://www.domain.com/">
+abcdefghijklmnopqrstuvwxyz.abcdefghijklmnopqrstuvwxyz.a.domain.com.com
+</a>
+From: jumble.com
+X-Lines: 3
+Buy now!
+<a href="http://uselesstools.com/?item=oop">oop.c.com</a>
+<a href="http://c.com/?item=hammer">hammer.uselesstools.com</a>
+From: incomplete
+X-Lines: 1
+<a href="http://abc.com">c.com</a>
+From: incomplete2
+X-Lines: 1
+<a href="http://c.com/">abc.com</a>
+From: randomcase
+X-Lines: 3
+Your account is frozen.  Go to <a href="http://mybank.com/?update"
+>yourbank.com</a> to fix the problem as soon as possible!
+Act now! http://WWW.YOURBANK.COM
+From: okcase
+X-Lines: 3
+Your account is frozen.  Go to <a href="http://mybank.com/?update"
+>123.yourbank.com</a> to fix the problem as soon as possible!
+Act now! http://WWW.YOURBANK.COM
+From: lots-uv-links
+X-Lines: 10
+<a href="http://a.x">a.x</a><a href="http://b.y">a.b.y</a>
+<a href="http://w.a.x/xyz">a.x</a><a href="http://n.a">n.a</a>
+<a href="http://a.b.a">aba</a><a href="http://x.y.z">woo</a>
+<a href="http://www.ucf.edu">ucf.edu.</a><a href=
+"http://why.me/?123GTAER"> </a><a href=
+"http://searchengine.com/?q=ucf">click here</a><a href
+= "http://q.w.e.r.t.y">Q.W.E.R.T.Y.T.R.E.W.Q</a>ow<a
+href="http://a.b/http://b.c/http://c.d">a.b</a>
+<a href="http://a.b/http://b.c/http://c.d">C.D</a>
+<a href="http://a.b/http://b.c/http://c.d">c.d</a>
+From: lots-uv-links-yay
+X-Lines: 10
+<a href="http://a.x">a.x</a><a href="http://b.y">a.b.y</a>
+<a href="http://w.a.x/xyz">a.x</a><a href="http://n.a">n.a</a>
+<a href="http://a.b.a">aba</a><a href="http://x.y.z">woo</a>
+<a href="http://www.ucf.edu">ucf.edu.</a><a href=
+"http://why.me/?123GTAER"> </a><a href=
+"http://searchengine.com/?q=ucf">click here</a><a href
+= "http://q.w.e.r.t.y">Q.W.E.R.T.Y.T.R.E.W.Q</a>ow<a
+href="http://a.b/http://b.c/http://c.d">a.b</a>
+<a href="http://a.b/http://b.c/http://c.d">C.D</a>
+<a href="http://a.b/http://b.c/http://c.d">c.d/</a>

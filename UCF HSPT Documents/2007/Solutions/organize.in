@@ -1,0 +1,40 @@
+120 200 600 300
+40 400 100 25
+100 150 150 12
+120 120 2 1
+120 3 120 1
+1 120 120 1
+800 11000 500 5000
+350 8000 5000 5000
+400 100 200 55
+320 50 120 20
+30 140 140 70
+85 300 70 150
+70 40 80 1
+650 400 300 125
+1000 1200 500 500
+150 180 300 160
+500 600 400 350
+500 600 400 260
+40 500 120 20
+10 100 120 4
+65 120 120 33
+63 120 120 31
+4 120 120 2
+120 4 120 2
+120 120 4 2
+120 120 120 60
+120 120 120 61
+120 120 120 59
+0 0 0 0
+
+1-3: Sample cases
+4-6: min 1 CD case
+7-8: max stack case
+9-11: cases where 1 side is smaller than a CD diameter
+12: case where 2 sides of box smaller than CD diameter
+13: case where all sides of box are smaller than CD diameter
+14-18: Boxes where all sides are greater than CD diameter, 14 & 15 being fitting for any orientation, 16 & 17 not fitting
+19-22: Random boxes, random stacks
+23-25: Same box, just rotated
+27-28: perfect cube

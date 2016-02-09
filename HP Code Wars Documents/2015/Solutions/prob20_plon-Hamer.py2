@@ -1,0 +1,72 @@
+import sys
+
+structure = None
+stack = []
+test_hash = False
+
+#parse structure
+while not structure:
+	line = sys.stdin.readline().rstrip()
+	parts = line.split()
+	for i in range(len(parts)):
+		if test_hash:
+			test_hash = False
+			if parts[i] == '#':
+				stack.append({})
+				continue
+			else:
+				stack.append([])
+		if parts[i] == '(':
+			test_hash = True
+		elif parts[i] == ')':
+			#end list or dict
+			complete = stack.pop()
+			if len(stack) == 0:
+				#done parsing
+				structure = complete
+				break
+			if isinstance(stack[-1], dict):
+				#key/value pair
+				stack[-1][complete[0]] = complete[1]
+			else:
+				stack[-1].append(complete)
+		else:
+			stack[-1].append(parts[i])
+
+print structure
+
+#interpret queries
+while True:
+	line = sys.stdin.readline().rstrip()
+	if line == '.':
+		break
+	#parse until . or [
+	pos = 0
+	idot = line.find('.', pos)
+	ibracket = line.find('[', pos)
+	obj = structure
+	while idot >= 0 or ibracket >= 0:
+		if idot >= 0 and (idot < ibracket or ibracket < 0):
+			#dot
+			key = line[pos:idot]
+			if key:
+				obj = obj[key]
+			pos = idot+1
+		else:
+			#bracket
+			key = line[pos:ibracket]
+			#find index
+			iendbracket = line.find(']', ibracket)
+			bracket_index = int(line[ibracket+1:iendbracket])
+			if key:
+				obj = obj[key]
+			obj = obj[bracket_index]
+			pos = iendbracket+1
+		idot = line.find('.', pos)
+		ibracket = line.find('[', pos)
+	if pos < len(line):
+		key = line[pos:]
+		obj = obj[key]
+	print line, '=', obj
+
+	

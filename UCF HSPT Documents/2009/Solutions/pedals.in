@@ -1,0 +1,2094 @@
+14
+4
+left
+forward
+right
+backward
+5
+rotate right
+left
+left
+rotate left
+forward
+20
+left
+backward
+forward
+right
+rotate right
+left
+forward
+backward
+backward
+forward
+left
+left
+rotate left
+left
+backward
+right
+right
+rotate left
+forward
+right
+20
+rotate left
+left
+left
+rotate left
+rotate left
+rotate left
+left
+left
+left
+left
+left
+left
+left
+left
+rotate left
+left
+rotate left
+left
+rotate left
+left
+20
+rotate right
+right
+right
+rotate right
+rotate right
+rotate right
+right
+right
+right
+right
+right
+right
+right
+right
+rotate right
+right
+rotate right
+right
+rotate right
+right
+1
+backward
+1
+forward
+1
+left
+1
+rotate left
+1
+rotate right
+1
+right
+1000
+right
+backward
+right
+rotate right
+rotate right
+right
+rotate left
+right
+left
+forward
+backward
+forward
+rotate left
+right
+backward
+forward
+rotate left
+rotate left
+forward
+backward
+rotate left
+left
+rotate left
+left
+right
+forward
+rotate left
+left
+rotate right
+rotate right
+backward
+backward
+rotate right
+backward
+rotate right
+left
+left
+rotate left
+left
+backward
+backward
+left
+rotate right
+forward
+forward
+backward
+right
+right
+rotate left
+rotate left
+rotate left
+right
+right
+left
+rotate left
+backward
+left
+rotate left
+left
+backward
+rotate right
+forward
+backward
+rotate left
+forward
+right
+right
+right
+forward
+rotate left
+left
+rotate left
+rotate right
+forward
+backward
+rotate right
+right
+rotate left
+rotate left
+right
+backward
+left
+rotate left
+left
+rotate right
+right
+rotate right
+right
+right
+backward
+right
+right
+left
+right
+rotate right
+rotate left
+forward
+rotate right
+backward
+right
+left
+rotate left
+forward
+left
+rotate left
+rotate left
+rotate left
+rotate right
+forward
+rotate left
+left
+forward
+rotate right
+right
+backward
+rotate left
+backward
+forward
+backward
+rotate left
+left
+rotate right
+backward
+backward
+backward
+right
+backward
+backward
+rotate right
+right
+forward
+forward
+rotate right
+left
+backward
+forward
+backward
+left
+left
+rotate right
+rotate left
+left
+rotate right
+backward
+rotate left
+right
+forward
+rotate right
+left
+left
+rotate right
+left
+right
+backward
+rotate left
+forward
+rotate left
+right
+left
+left
+backward
+right
+forward
+right
+left
+left
+rotate left
+right
+backward
+forward
+rotate right
+rotate right
+rotate left
+forward
+forward
+rotate right
+right
+rotate left
+right
+rotate left
+rotate left
+forward
+rotate left
+backward
+backward
+right
+rotate left
+forward
+right
+rotate left
+forward
+forward
+right
+right
+rotate left
+rotate left
+forward
+backward
+left
+right
+forward
+right
+left
+backward
+rotate left
+right
+rotate right
+rotate left
+left
+left
+backward
+rotate left
+forward
+rotate right
+left
+forward
+backward
+rotate right
+forward
+rotate left
+left
+rotate left
+forward
+left
+rotate right
+forward
+right
+rotate right
+backward
+forward
+rotate left
+forward
+forward
+forward
+forward
+rotate left
+rotate right
+rotate right
+rotate right
+right
+left
+rotate right
+right
+left
+right
+left
+rotate left
+rotate right
+right
+backward
+backward
+rotate right
+rotate left
+rotate left
+rotate right
+left
+rotate right
+rotate left
+right
+right
+rotate right
+left
+rotate right
+forward
+right
+forward
+backward
+rotate right
+right
+right
+left
+rotate left
+backward
+left
+forward
+backward
+backward
+right
+right
+rotate right
+rotate left
+rotate right
+right
+forward
+rotate left
+rotate right
+left
+backward
+left
+rotate right
+rotate left
+forward
+forward
+rotate right
+rotate right
+forward
+forward
+forward
+rotate right
+rotate left
+rotate left
+rotate left
+backward
+right
+left
+forward
+right
+forward
+left
+forward
+forward
+right
+rotate right
+backward
+forward
+rotate right
+rotate left
+right
+rotate right
+rotate right
+right
+forward
+rotate left
+rotate left
+forward
+forward
+backward
+rotate left
+rotate right
+backward
+backward
+rotate right
+right
+rotate right
+rotate left
+rotate right
+left
+right
+rotate left
+forward
+right
+backward
+forward
+rotate right
+rotate left
+left
+left
+backward
+backward
+rotate left
+rotate right
+backward
+backward
+rotate right
+rotate right
+forward
+rotate right
+rotate left
+rotate right
+rotate right
+forward
+rotate right
+right
+left
+forward
+backward
+rotate right
+backward
+left
+rotate right
+forward
+right
+right
+rotate left
+left
+backward
+right
+right
+left
+forward
+rotate left
+right
+left
+forward
+backward
+forward
+rotate left
+rotate right
+rotate right
+forward
+rotate right
+rotate right
+forward
+left
+backward
+rotate left
+rotate left
+left
+left
+rotate left
+backward
+forward
+forward
+rotate left
+forward
+backward
+forward
+rotate right
+backward
+rotate left
+forward
+backward
+rotate right
+rotate right
+backward
+left
+left
+left
+left
+left
+forward
+forward
+rotate right
+forward
+rotate right
+right
+rotate right
+forward
+backward
+forward
+left
+rotate left
+rotate left
+rotate right
+left
+forward
+rotate left
+backward
+left
+rotate right
+right
+forward
+backward
+rotate right
+left
+rotate right
+forward
+backward
+left
+forward
+forward
+rotate right
+forward
+forward
+rotate right
+forward
+left
+rotate left
+right
+backward
+right
+forward
+rotate left
+rotate right
+forward
+backward
+rotate right
+rotate right
+forward
+backward
+forward
+left
+forward
+forward
+left
+left
+left
+right
+forward
+right
+rotate right
+left
+rotate left
+rotate right
+rotate right
+rotate right
+rotate right
+rotate right
+left
+left
+left
+rotate left
+rotate right
+backward
+forward
+rotate right
+rotate left
+backward
+backward
+forward
+backward
+rotate left
+right
+backward
+backward
+right
+left
+rotate right
+rotate left
+rotate left
+forward
+left
+right
+right
+right
+rotate left
+rotate left
+rotate left
+rotate left
+backward
+forward
+right
+rotate left
+left
+left
+backward
+backward
+backward
+left
+left
+backward
+left
+right
+rotate left
+forward
+backward
+backward
+rotate left
+forward
+right
+backward
+left
+rotate right
+rotate right
+backward
+forward
+rotate right
+rotate left
+right
+right
+left
+rotate right
+left
+rotate right
+right
+left
+rotate left
+rotate right
+rotate right
+rotate left
+rotate right
+forward
+backward
+left
+forward
+rotate left
+rotate right
+backward
+rotate left
+backward
+forward
+rotate left
+right
+rotate left
+backward
+rotate left
+left
+rotate right
+right
+left
+forward
+rotate left
+forward
+forward
+rotate left
+left
+rotate right
+left
+right
+rotate right
+forward
+right
+rotate right
+backward
+rotate left
+backward
+forward
+forward
+backward
+right
+left
+right
+forward
+backward
+right
+right
+left
+rotate left
+rotate left
+right
+left
+forward
+right
+forward
+rotate right
+backward
+forward
+rotate left
+backward
+forward
+forward
+rotate right
+right
+left
+right
+rotate left
+backward
+backward
+forward
+forward
+backward
+forward
+backward
+backward
+forward
+rotate left
+left
+right
+left
+rotate left
+rotate left
+left
+rotate left
+rotate left
+right
+rotate left
+rotate right
+right
+forward
+forward
+left
+forward
+rotate right
+forward
+right
+right
+rotate left
+left
+rotate left
+rotate left
+rotate right
+backward
+rotate right
+backward
+rotate left
+rotate right
+forward
+right
+backward
+right
+backward
+forward
+right
+forward
+forward
+rotate left
+rotate left
+rotate left
+forward
+forward
+rotate right
+forward
+backward
+backward
+forward
+rotate left
+backward
+rotate left
+right
+rotate left
+forward
+forward
+forward
+left
+right
+rotate left
+forward
+forward
+rotate right
+backward
+rotate left
+forward
+rotate right
+right
+forward
+rotate left
+right
+backward
+rotate right
+rotate right
+left
+left
+left
+rotate right
+forward
+forward
+forward
+rotate left
+backward
+forward
+left
+backward
+rotate right
+rotate right
+backward
+forward
+left
+forward
+rotate right
+forward
+rotate left
+rotate right
+right
+rotate left
+rotate right
+left
+right
+rotate left
+left
+backward
+rotate right
+rotate right
+forward
+forward
+backward
+left
+right
+rotate left
+left
+right
+left
+forward
+rotate right
+rotate right
+forward
+backward
+rotate left
+backward
+forward
+forward
+backward
+forward
+left
+backward
+left
+backward
+rotate right
+rotate right
+rotate left
+left
+right
+right
+left
+rotate right
+left
+rotate right
+rotate right
+rotate right
+rotate right
+forward
+rotate right
+forward
+backward
+right
+rotate right
+rotate right
+rotate left
+rotate right
+forward
+left
+right
+right
+right
+left
+backward
+rotate left
+right
+left
+rotate right
+left
+backward
+right
+rotate right
+rotate right
+rotate left
+rotate right
+rotate right
+forward
+right
+forward
+rotate right
+backward
+rotate right
+left
+left
+backward
+backward
+backward
+right
+backward
+left
+right
+rotate left
+rotate right
+forward
+right
+rotate left
+forward
+backward
+backward
+forward
+rotate right
+backward
+rotate right
+right
+forward
+rotate right
+backward
+backward
+forward
+rotate right
+rotate right
+forward
+rotate right
+forward
+backward
+rotate right
+rotate left
+rotate left
+left
+left
+right
+rotate right
+left
+forward
+rotate left
+forward
+left
+backward
+rotate right
+left
+backward
+rotate left
+rotate right
+right
+right
+left
+backward
+forward
+forward
+backward
+rotate left
+rotate right
+rotate left
+forward
+forward
+right
+rotate right
+backward
+left
+rotate left
+backward
+right
+forward
+right
+backward
+backward
+left
+rotate right
+right
+right
+rotate right
+forward
+backward
+forward
+left
+left
+rotate right
+forward
+rotate right
+backward
+left
+left
+left
+left
+left
+left
+left
+rotate left
+rotate left
+right
+backward
+rotate left
+forward
+right
+right
+forward
+forward
+rotate right
+rotate right
+left
+right
+left
+rotate left
+forward
+rotate right
+rotate left
+left
+rotate right
+backward
+left
+right
+right
+rotate right
+rotate left
+right
+left
+right
+rotate left
+backward
+backward
+left
+rotate right
+rotate left
+rotate right
+right
+right
+forward
+left
+rotate left
+forward
+forward
+right
+backward
+forward
+forward
+backward
+left
+rotate right
+left
+backward
+backward
+backward
+right
+forward
+right
+rotate right
+backward
+rotate left
+forward
+right
+left
+forward
+rotate left
+rotate right
+right
+rotate left
+left
+forward
+forward
+backward
+forward
+rotate right
+backward
+rotate right
+backward
+forward
+forward
+forward
+rotate left
+backward
+backward
+left
+rotate right
+left
+forward
+forward
+rotate left
+backward
+rotate left
+1000
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+backward
+2
+right
+forward
+
+

@@ -1,0 +1,52 @@
+#!/usr/bin/env python
+
+import fileinput
+
+def diamond(size, x, y):
+    half = size / 2
+
+    if x < half:
+        if y < half:
+            if x + y + 1 < half:
+                return "#"
+            else:
+                return "/"
+        else:
+            if y - x - 1 < half:
+                return "\\"
+            else:
+                return "#"
+    else:
+        if y < half:
+            if x - y - 1 < half:
+                return "\\"
+            else:
+                return "#"
+        else:
+            if x + y + 1 > size + half:
+                return "#"
+            else:
+                return "/"
+
+def diamonds(size, rows, columns):
+    for y in range(0, size * rows):
+        l = ""
+        for x in range(0, size * columns):
+            l += diamond(size, x % size, y % size)
+        print l
+
+gap = False
+
+for line in fileinput.input():
+    (size, rows, columns) = line.split(None, 2)
+
+    (size, rows, columns) = (int(size), int(rows), int(columns))
+
+    if (size, rows, columns) == (0, 0, 0):
+        break
+
+    if gap:
+        print
+
+    diamonds(size, rows, columns)
+    gap = True

@@ -1,0 +1,51 @@
+35
+
+Max cases, with varying slices and slices eaten.
+300 50 50
+300 1 1
+300 50 1
+
+Near max case.
+300 50 49
+
+Varying parameters w/ max slices eaten.
+300 25 3
+300 22 11
+
+Min cases, with varying sliches and slices eaten.
+While they all give the same answer, the varying decimals
+could throw off the users doubles. 
+1 1 1
+1 50 1
+1 50 50
+1 50 5
+1 50 49
+
+Near max cases
+299 50 49
+299 1 1
+299 5 1
+299 2 1
+
+Near min case. Should return 2. 
+2 3 1
+
+Random Cases
+63 8 4
+100 12 10
+150 50 25
+150 2 1
+250 23 11
+15 23 22
+100 42 13
+200 25 25
+50 50 49
+90 40 23
+100 1 1
+33 3 2
+33 3 1
+33 6 4
+256 6 2
+5 1 1
+55 1 1
+111 1 1

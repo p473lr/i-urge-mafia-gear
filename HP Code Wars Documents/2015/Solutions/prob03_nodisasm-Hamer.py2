@@ -1,0 +1,8 @@
+import sys
+
+words = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten']
+
+num = int(sys.stdin.readline())
+
+print 'Number', words[num-1], 'is alive!'
+	

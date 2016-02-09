@@ -1,0 +1,3 @@
+Problem: Starter
+
+The judge data consists of 40000 points, all of which exist on the outer boundary of the input region, so as to maximize the resolution at which we are testing the solutions.

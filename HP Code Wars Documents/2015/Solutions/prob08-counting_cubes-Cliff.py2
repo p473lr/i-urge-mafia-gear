@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+
+import fileinput
+
+n = None
+
+c2n = {}
+
+empty = 0
+nocube = 0
+
+for line in fileinput.input():
+    if n is None:
+        n = int(line)
+        continue
+
+    (name, cube) = line.rsplit(None, 1)
+    cube = int(cube)
+
+    if cube not in c2n:
+        c2n[cube] = []
+
+    if name == "NA":
+        empty += 1
+    elif cube == 0:
+        nocube += 1
+    else:
+        c2n[cube].append(name)
+
+print "Empty Cubes: {0}".format(empty)
+print "Duplicate Cube Assignments: {0}".format(len(filter(lambda v: len(v) > 1, c2n.values())))
+print "Employees without Cube: {0}".format(nocube)

@@ -1,0 +1,69 @@
+import sys
+
+class match_state:
+	def __init__(self, ai, com, sim, si, wi):
+		self.ai = ai	#index in acronym
+		self.com = com	#complete flag
+		self.sim = sim	#simple flag
+		self.si = si	#word index in sentence
+		self.wi = wi	#index in word (0 or 1)
+		
+
+def test_acro(state, acro, parts, branch_states):
+	while True:
+		if state.ai >= len(acro):
+			if state.si + 1 < len(parts):
+				state.com = False
+			return True #acronym success!
+		letter = acro[state.ai]
+		letter2 = acro[state.ai+1] if state.ai + 1 < len(acro) else None
+		while True:
+			if state.si + 1 >= len(parts):
+				return False #acronym fail! try next branch state
+			c1 = parts[state.si+1][0]
+			c2 = parts[state.si+1][1] if len(parts[state.si+1]) > 1 else None
+			if state.wi == 0 and letter == c1:
+				break
+			if state.wi == 1 and letter2 and c2 and letter2 == c2:
+				state.ai += 1
+				break
+			#failed to match, try next word in sentence
+			state.com = False
+			state.si += 1
+			state.wi = 0
+		#got match
+		if state.wi == 1:
+			state.sim = False
+		else:
+			#check second letter and branch state possibly
+			if letter2 and c2 and letter2 == c2:
+				branch_states.append(match_state(state.ai, state.com, state.sim, state.si, 1))
+		state.wi = 0
+		#goto next word to check and next acronym letter
+		state.si += 1
+		state.ai += 1
+	raise Exception('unexpected control flow!')
+		
+
+num = int(sys.stdin.readline())
+
+for i in range(num):
+	orig_line = sys.stdin.readline()
+	line = orig_line.lower().replace('-', ' ')
+	parts = line.split()
+	acro = parts[0]
+	branch_states = [match_state(0, True, True, 0, 0)]
+	success_state = None
+		
+	while len(branch_states) > 0:
+		curr_state = branch_states.pop()
+		if test_acro(curr_state, acro, parts, branch_states):
+			success_state = curr_state
+			break
+
+	if success_state:
+		print orig_line[:len(acro)], 'is a', 'complete' if success_state.com else 'partial', 'simple' if success_state.sim else 'complex', 'acronym for', orig_line[len(acro)+1:]
+	else:
+		print orig_line[:len(acro)], 'is not an acronym for', orig_line[len(acro)+1:]
+			
+		

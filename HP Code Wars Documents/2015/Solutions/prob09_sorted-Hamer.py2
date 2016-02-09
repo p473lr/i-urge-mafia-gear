@@ -1,0 +1,18 @@
+import sys, collections
+
+scores = collections.defaultdict(int)
+while True:
+	line = sys.stdin.readline()
+	nums = line.split(' ', 2)
+	team = int(nums[0])
+	score = int(nums[1])
+	if team == 0 and score == 0:
+		break
+	scores[team] += score
+
+i = 1
+for team in sorted(scores, key=scores.get, reverse=True):
+	if (i > 5):
+		break
+	print i, team, scores[team]
+	i += 1

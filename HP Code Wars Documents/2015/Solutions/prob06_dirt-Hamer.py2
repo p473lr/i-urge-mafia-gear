@@ -1,0 +1,11 @@
+import sys
+
+a = int(sys.stdin.readline())
+b = int(sys.stdin.readline())
+c = int(sys.stdin.readline())
+
+cubic_feet = a * b * c
+parts = divmod(cubic_feet, 27)
+answer = parts[0] + (1 if parts[1] else 0)
+
+print answer

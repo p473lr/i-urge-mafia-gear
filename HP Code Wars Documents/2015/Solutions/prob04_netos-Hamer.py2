@@ -1,0 +1,10 @@
+import sys
+
+while True:
+	line = sys.stdin.readline()
+	nums = line.split(' ', 2)
+	num1 = int(nums[0])
+	num2 = int(nums[1])
+	if num1 == 0 and num2 == 0:
+		break
+	print num1 * num2

@@ -1,0 +1,43 @@
+20
+UCF Knights
+5
+Computer
+10
+ACM
+2
+four
+4
+spaces in the input
+10
+spaces and length
+17
+abcdefghijklmnopqrstuvwxyz
+26
+abcdefghijklmnopqrstuvwxyz
+25
+abcdefghijklmnopqrstuvwxyz
+27
+One
+1
+max input next
+50
+This sign has ninety nine characters because it is trying to break your program  You know it is fun
+50
+This sign has ninety nine characters because it is trying to break your program  You know it is fun
+1
+We had to fix this one because empty strings are not allowed
+10
+A
+1
+Ab
+1
+Abc
+1
+Abcd
+1
+Abcde
+1
+Heres       a test       with       several       spaces       between       words
+7
+You shouldnt be processing this message
+10
