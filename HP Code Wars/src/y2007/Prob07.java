@@ -1,3 +1,5 @@
+package y2007;
+
 /*
  * Prob07.java
  */

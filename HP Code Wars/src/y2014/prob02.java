@@ -1,3 +1,5 @@
+package y2014;
+
 import java.io.File;
 import java.io.FileReader;
 import java.io.InputStreamReader;
@@ -5,13 +7,12 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
-public class prob03
+public class prob02
 {
 
     String[] inputLines;
-    int[] digitToMilliwattsArray = {90, 30, 75, 75, 60, 75, 90, 45, 105, 90};
 
-    public prob03()
+    public prob02()
     {
         readInput();
         
@@ -19,39 +20,42 @@ public class prob03
         {
             String upcCode = inputLines[lineIndex];
             
-            int checkDigit = calculateClockPower(upcCode);
+            int checkDigit = calculateCheckDigit(upcCode);
             
-            System.out.println(checkDigit + " milliamps");
+            System.out.println(upcCode + " " + checkDigit);
         }
     }
     public static void main(String[] args)
     {
-        prob03 instance = new prob03();
+        prob02 instance = new prob02();
     }
     
-    private int calculateClockPower(String inputLine)
+    private int calculateCheckDigit(String inputLine)
     {
-        String[] clockSplit = inputLine.split(":");
-        int milliwatts = 20;
+        String[] upcCodeSplit = inputLine.split(" ");
         
-        String hours = clockSplit[0];
-        String minutes = clockSplit[1];
+        int checksum = 0;
         
-        int singleDigit = new Integer(hours.substring(0,1));
-        if (hours.length() > 1)
+        for (int oddDigit = 0; oddDigit < upcCodeSplit.length; oddDigit+=2)
         {
-            milliwatts += digitToMilliwattsArray[1];
-            singleDigit = new Integer(hours.substring(1));
+            checksum += new Integer(upcCodeSplit[oddDigit]);
         }
-        milliwatts += digitToMilliwattsArray[singleDigit];
         
-        int tensDigit = new Integer(minutes.substring(0,1));
-        singleDigit = new Integer(minutes.substring(1));
+        checksum *= 3;
         
-        milliwatts += digitToMilliwattsArray[tensDigit];
-        milliwatts += digitToMilliwattsArray[singleDigit];
+        for (int evenDigit = 1; evenDigit < upcCodeSplit.length; evenDigit+=2)
+        {
+            checksum += new Integer(upcCodeSplit[evenDigit]);
+        }
         
-        return milliwatts;
+        checksum %= 10;
+        
+        if (checksum != 0)
+        {
+            checksum = 10 - checksum;
+        }
+        
+        return checksum;
     }
     
     private void readInput()

@@ -7,14 +7,14 @@
  * Hp CodeWars Railway Shunting Crew
  */
 
-package HPCodeWars;
+package y2008;
 import java.io.*;
 
 
 public class prob15 {
     
     /** Creates a new instance of RailwayShunting */
-    public RailwayShunting() {
+    public prob15() {
     }
     
     // class that will represent the Rail Cars

@@ -1,3 +1,5 @@
+package y2008;
+
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -13,7 +15,7 @@ public class prob08 {
 	private Map dictionary;
 	private ArrayList textToTranslate;
 
-	public LeetTranslator(InputStream stream) throws IOException, Exception {
+	public prob08(InputStream stream) throws IOException, Exception {
 		StringBuffer buf = new StringBuffer();
 		
 		// Suck the whole file into memory
