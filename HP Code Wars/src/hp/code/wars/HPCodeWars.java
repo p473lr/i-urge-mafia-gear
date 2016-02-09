@@ -13,6 +13,6 @@ public class HPCodeWars
 {
     public static void main (String args[])
     {
-
+        
     }
 }
