@@ -25,10 +25,10 @@ public class baseProgram1 {
 
     public baseProgram1() {
         //Specify Input Method:
-        //read          Full/Partial            Split/Single            Input           Set/Until/SetAtRun
+        //read           Split/Single            Input           Set/Until/SetAtRun
         //or:
         //readNoInput();
-        readNoInput();
+        readSplitInputUntil("-","0 0");
     }
 
     public static void main(String[] args) {
@@ -39,7 +39,7 @@ public class baseProgram1 {
         function(null);
     }
 
-    private void readFullSplitInputUntil(String seperatedBy, String endString) {
+    private void readSplitInputUntil(String seperatedBy, String endString) {
 
         try {
 
@@ -50,12 +50,12 @@ public class baseProgram1 {
 
             ArrayList<String[]> input = new ArrayList<String[]>();
 
-            while (null != aLine && false == aLine.equals(endString)) {
+            while (!aLine.equals(endString)) {
 
                 String[] line = aLine.split(seperatedBy);
-                
+
                 input.add(line);
-                
+
                 aLine = standardIn.readLine();
             }
 
@@ -66,7 +66,7 @@ public class baseProgram1 {
         }
     }
 
-    private void readFullSplitInputSet(String seperatedBy, int numLines) {
+    private void readSplitInputSet(String seperatedBy, int numLines) {
 
         try {
 
@@ -78,11 +78,15 @@ public class baseProgram1 {
             int count = 1;
 
             ArrayList<String[]> input = new ArrayList<String[]>();
-            
-            while (null != aLine && count <= numLines) {
-                String[] input = aLine.split(seperatedBy);
 
-                aLine = standardIn.readLine();
+            while (count <= numLines) {
+                String[] line = aLine.split(seperatedBy);
+
+                input.add(line);
+
+                if (count != numLines) {
+                    aLine = standardIn.readLine();
+                }
                 count++;
             }
 
@@ -91,7 +95,7 @@ public class baseProgram1 {
         }
     }
 
-    private void readFullSplitInputSetAtRun(String seperatedBy) {
+    private void readSplitInputSetAtRun(String seperatedBy) {
 
         try {
 
@@ -105,11 +109,15 @@ public class baseProgram1 {
             int count = 1;
 
             ArrayList<String[]> input = new ArrayList<String[]>();
-            
-            while (null != aLine && count <= numLines) {
-                String[] input = aLine.split(seperatedBy);
 
-                aLine = standardIn.readLine();
+            while (count <= numLines) {
+                String[] line = aLine.split(seperatedBy);
+
+                input.add(line);
+
+                if (count != numLines) {
+                    aLine = standardIn.readLine();
+                }
                 count++;
             }
 
@@ -118,7 +126,7 @@ public class baseProgram1 {
         }
     }
 
-    private void readFullSingleInputUntil(String endString) {
+    private void readSingleInputUntil(String endString) {
 
         try {
 
@@ -128,11 +136,14 @@ public class baseProgram1 {
             aLine = standardIn.readLine();
 
             ArrayList<String[]> input = new ArrayList<String[]>();
-            
-            while (null != aLine && false == aLine.equals(endString)) {
 
-                String[] input = new String[1];
-                input[0] = aLine;
+            while (!aLine.equals(endString)) {
+
+                String[] line = new String[1];
+                line[0] = aLine;
+
+                input.add(line);
+
                 aLine = standardIn.readLine();
             }
 
@@ -141,7 +152,7 @@ public class baseProgram1 {
         }
     }
 
-    private void readFullSingleInputSet(int numLines) {
+    private void readSingleInputSet(int numLines) {
 
         try {
 
@@ -153,12 +164,16 @@ public class baseProgram1 {
             int count = 1;
 
             ArrayList<String[]> input = new ArrayList<String[]>();
-            
-            while (null != aLine && count <= numLines) {
-                String[] input = new String[1];
-                input[0] = aLine;
 
-                aLine = standardIn.readLine();
+            while (count <= numLines) {
+                String[] line = new String[1];
+                line[0] = aLine;
+
+                input.add(line);
+
+                if (count != numLines) {
+                    aLine = standardIn.readLine();
+                }
                 count++;
             }
 
@@ -167,7 +182,7 @@ public class baseProgram1 {
         }
     }
 
-    private void readFullSingleInputSetAtRun() {
+    private void readSingleInputSetAtRun() {
 
         try {
 
@@ -181,12 +196,16 @@ public class baseProgram1 {
             int count = 1;
 
             ArrayList<String[]> input = new ArrayList<String[]>();
-            
-            while (null != aLine && count <= numLines) {
-                String[] input = new String[1];
-                input[0] = aLine;
 
-                aLine = standardIn.readLine();
+            while (count <= numLines) {
+                String[] line = new String[1];
+                line[0] = aLine;
+
+                input.add(line);
+
+                if (count != numLines) {
+                    aLine = standardIn.readLine();
+                }
                 count++;
             }
 
@@ -195,156 +214,173 @@ public class baseProgram1 {
         }
     }
 
-    private void readPartialSplitInputUntil(String seperatedBy, String endString) {
-
-        try {
-
-            BufferedReader standardIn = new BufferedReader(new InputStreamReader(System.in));
-            String aLine = null;
-
-            aLine = standardIn.readLine();
-
-            ArrayList<String[]> input = new ArrayList<String[]>();
-            
-            while (null != aLine && false == aLine.equals(endString)) {
-
-                String[] input = aLine.split(seperatedBy);
-                aLine = standardIn.readLine();
-            }
-
-        } catch (IOException ioex) {
-            ioex.printStackTrace();
-        }
-    }
-
-    private void readPartialSplitInputSet(String seperatedBy, int numLines) {
-
-        try {
-
-            BufferedReader standardIn = new BufferedReader(new InputStreamReader(System.in));
-            String aLine = null;
-
-            aLine = standardIn.readLine();
-
-            int count = 1;
-
-            ArrayList<String[]> input = new ArrayList<String[]>();
-            
-            while (null != aLine && count <= numLines) {
-                String[] input = aLine.split(seperatedBy);
-
-                aLine = standardIn.readLine();
-                count++;
-            }
-
-        } catch (IOException ioex) {
-            ioex.printStackTrace();
-        }
-    }
-
-    private void readPartialSplitInputSetAtRun(String seperatedBy) {
-
-        try {
-
-            BufferedReader standardIn = new BufferedReader(new InputStreamReader(System.in));
-
-            int numLines = new Integer(standardIn.readLine()).intValue();
-
-            String aLine = null;
-            aLine = standardIn.readLine();
-
-            int count = 1;
-
-            ArrayList<String[]> input = new ArrayList<String[]>();
-            
-            while (null != aLine && count <= numLines) {
-                String[] input = aLine.split(seperatedBy);
-
-                aLine = standardIn.readLine();
-                count++;
-            }
-
-        } catch (IOException ioex) {
-            ioex.printStackTrace();
-        }
-    }
-
-    private void readPartialSingleInputUntil(String endString) {
-
-        try {
-
-            BufferedReader standardIn = new BufferedReader(new InputStreamReader(System.in));
-            String aLine = null;
-
-            aLine = standardIn.readLine();
-
-            ArrayList<String[]> input = new ArrayList<String[]>();
-            
-            while (null != aLine && false == aLine.equals(endString)) {
-
-                String[] input = new String[1];
-                input[0] = aLine;
-                aLine = standardIn.readLine();
-            }
-
-        } catch (IOException ioex) {
-            ioex.printStackTrace();
-        }
-    }
-
-    private void readPartialSingleInputSet(int numLines) {
-
-        try {
-
-            BufferedReader standardIn = new BufferedReader(new InputStreamReader(System.in));
-            String aLine = null;
-
-            aLine = standardIn.readLine();
-
-            int count = 1;
-
-            ArrayList<String[]> input = new ArrayList<String[]>();
-            
-            while (null != aLine && count <= numLines) {
-                String[] input = new String[1];
-                input[0] = aLine;
-
-                aLine = standardIn.readLine();
-                count++;
-            }
-
-        } catch (IOException ioex) {
-            ioex.printStackTrace();
-        }
-    }
-
-    private void readPartialSingleInputSetAtRun() {
-
-        try {
-
-            BufferedReader standardIn = new BufferedReader(new InputStreamReader(System.in));
-
-            int numLines = new Integer(standardIn.readLine()).intValue();
-
-            String aLine = null;
-            aLine = standardIn.readLine();
-
-            int count = 1;
-
-            ArrayList<String[]> input = new ArrayList<String[]>();
-            
-            while (null != aLine && count <= numLines) {
-                String[] input = new String[1];
-                input[0] = aLine;
-
-                aLine = standardIn.readLine();
-                count++;
-            }
-
-        } catch (IOException ioex) {
-            ioex.printStackTrace();
-        }
-    }
+//    private void readPartialSplitInputUntil(String seperatedBy, String endString) {
+//
+//        try {
+//
+//            BufferedReader standardIn = new BufferedReader(new InputStreamReader(System.in));
+//            String aLine = null;
+//
+//            aLine = standardIn.readLine();
+//
+//            ArrayList<String[]> input = new ArrayList<String[]>();
+//
+//            while (!aLine.equals(endString)) {
+//                String[] line = aLine.split(seperatedBy);
+//                input.add(line);
+//                function(input);
+//                aLine = standardIn.readLine();
+//            }
+//
+//        } catch (IOException ioex) {
+//            ioex.printStackTrace();
+//        }
+//    }
+//
+//    private void readPartialSplitInputSet(String seperatedBy, int numLines) {
+//
+//        try {
+//
+//            BufferedReader standardIn = new BufferedReader(new InputStreamReader(System.in));
+//            String aLine = null;
+//
+//            aLine = standardIn.readLine();
+//
+//            int count = 1;
+//
+//            ArrayList<String[]> input = new ArrayList<String[]>();
+//
+//            while (count <= numLines) {
+//                String[] line = aLine.split(seperatedBy);
+//                input.add(line);
+//
+//                function(input);
+//
+//                if (count != numLines) {
+//                    aLine = standardIn.readLine();
+//                }
+//                count++;
+//            }
+//
+//        } catch (IOException ioex) {
+//            ioex.printStackTrace();
+//        }
+//    }
+//
+//    private void readPartialSplitInputSetAtRun(String seperatedBy) {
+//
+//        try {
+//
+//            BufferedReader standardIn = new BufferedReader(new InputStreamReader(System.in));
+//
+//            int numLines = new Integer(standardIn.readLine()).intValue();
+//
+//            String aLine = null;
+//            aLine = standardIn.readLine();
+//
+//            int count = 1;
+//
+//            ArrayList<String[]> input = new ArrayList<String[]>();
+//
+//            while (count <= numLines) {
+//                String[] line = aLine.split(seperatedBy);
+//                input.add(line);
+//
+//                if (count != numLines) {
+//                    aLine = standardIn.readLine();
+//                }
+//                count++;
+//            }
+//
+//        } catch (IOException ioex) {
+//            ioex.printStackTrace();
+//        }
+//    }
+//
+//    private void readPartialSingleInputUntil(String endString) {
+//
+//        try {
+//
+//            BufferedReader standardIn = new BufferedReader(new InputStreamReader(System.in));
+//            String aLine = null;
+//
+//            aLine = standardIn.readLine();
+//
+//            ArrayList<String[]> input = new ArrayList<String[]>();
+//
+//            while (!aLine.equals(endString)) {
+//
+//                String[] line = new String[1];
+//                line[0] = aLine;
+//
+//                function(input);
+//                input.clear();
+//
+//                aLine = standardIn.readLine();
+//            }
+//
+//        } catch (IOException ioex) {
+//            ioex.printStackTrace();
+//        }
+//    }
+//
+//    private void readPartialSingleInputSet(int numLines) {
+//
+//        try {
+//
+//            BufferedReader standardIn = new BufferedReader(new InputStreamReader(System.in));
+//            String aLine = null;
+//
+//            aLine = standardIn.readLine();
+//
+//            int count = 1;
+//
+//            ArrayList<String[]> input = new ArrayList<String[]>();
+//
+//            while (count <= numLines) {
+//                String[] input = new String[1];
+//                input[0] = aLine;
+//
+//                aLine = standardIn.readLine();
+//                if (count != numLines) {
+//                    aLine = standardIn.readLine();
+//                }
+//            }
+//
+//        } catch (IOException ioex) {
+//            ioex.printStackTrace();
+//        }
+//    }
+//
+//    private void readPartialSingleInputSetAtRun() {
+//
+//        try {
+//
+//            BufferedReader standardIn = new BufferedReader(new InputStreamReader(System.in));
+//
+//            int numLines = new Integer(standardIn.readLine()).intValue();
+//
+//            String aLine = null;
+//            aLine = standardIn.readLine();
+//
+//            int count = 1;
+//
+//            ArrayList<String[]> input = new ArrayList<String[]>();
+//
+//            while (count <= numLines) {
+//                String[] input = new String[1];
+//                input[0] = aLine;
+//
+//                if (count != numLines) {
+//                    aLine = standardIn.readLine();
+//                }
+//                count++;
+//            }
+//
+//        } catch (IOException ioex) {
+//            ioex.printStackTrace();
+//        }
+//    }
 
     private ArrayList<String[]> removeEmptyStrings(ArrayList<String[]> inputList) {
         ArrayList<String[]> outputList = new ArrayList<String[]>();
